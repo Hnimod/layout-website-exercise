@@ -1,0 +1,120 @@
+main {
+  align-items: center;
+  background-image: url('../images/template-image.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 140rem;
+}
+
+.button {
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.button__icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.button:hover {
+  background-color: rgb(131, 131, 131);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.otp {
+  padding: 3rem;
+  font-size: 1.6rem;
+}
+
+.otp__instructions {
+  width: 100%;
+  max-width: 35rem;
+  margin-bottom: 3rem;
+}
+
+.otp__instructions a {
+  text-decoration: none;
+  color: blue;
+}
+
+.otp__instructions a:hover {
+  text-decoration: underline;
+}
+
+.otp__inputs {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.otp__inputs input {
+  border: none;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  width: 3rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.otp__inputs input[type='number']::-webkit-inner-spin-button,
+.otp__inputs input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.otp__inputs input:focus {
+  outline: none;
+}
+
+.otp__inputs > *:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.otp__submit {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.otp__submit a {
+  text-decoration: none;
+  color: blue;
+}
+
+.otp__submit a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 375px) {
+  .otp__inputs input {
+    padding: 1.5rem 1.8rem;
+    width: 4rem;
+  }
+
+  .otp__submit {
+    margin-top: 8rem;
+  }
+
+  .button {
+    padding: 3rem;
+  }
+}
